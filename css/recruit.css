@@ -1,0 +1,359 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+.h2 {
+  font-size: 30px;
+}
+
+.flex__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+
+
+/*---------------- header ------------------*/
+.header {
+  height: 80px;
+  line-height: 80px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+}
+
+.header__logo {
+  width: 70px;
+  margin-left: 25px;
+}
+
+.header__nav {
+  margin-right: 40px;
+}
+
+.header__nav-list li {
+  margin-right: 25px;
+}
+
+.header__nav-list li:last-child {
+  margin-right: 0;
+}
+
+.header__nav-list-link {
+  height: 80px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.header__nav-list-link:hover {
+  opacity: 0.7;
+  transition: all 0.4s;
+}
+
+.nav {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+
+/*---------------- firstview ------------------*/
+.firstview__eyecatch {
+  position: relative;
+  margin-top: 80px;
+}
+
+.firstview__eyecatch {
+  height: 250px;
+}
+
+.main-card-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.firstview__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.firstview__content h1 {
+  font-size: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
+/*---------------- content ------------------*/
+.content {
+  width: 85%;
+  margin: 80px auto;
+}
+
+.content__ttl {
+  font-size: 25px;
+  border-bottom: solid 1px #000;
+  padding-bottom: 5px;
+}
+
+.content__text {
+  margin: 20px 0 20px 0;
+}
+
+table {
+  width: 100%;
+}
+
+.table__th {
+  border: solid 1px #000;
+  background: rgb(240, 239, 239);
+  padding: 15px 0;
+  width: 30%;
+}
+
+.table__td {
+  border: solid 1px #000;
+  padding: 15px 0 15px 10px;
+  text-align: left;
+} 
+
+.content-2 {
+  margin-top: 80px;
+}
+
+
+/*---------------- contact ------------------*/
+.contact {
+  text-align: center;
+  background: rgb(243, 247, 250);
+}
+
+.contact__ttl {
+  padding: 80px 0 20px 0;
+}
+
+.contact__text {
+  padding-bottom: 60px;
+}
+
+.contact__btn {
+  padding-bottom: 80px;
+}
+
+.contact__link {
+  color: #fff;
+  background: rgb(211, 8, 8);
+  padding: 15px 100px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact__link:hover {
+  opacity: 0.7;
+  transition: all 0.4s;
+}
+
+/*---------------- footer ------------------*/
+.footer__wrap {
+  background: rgb(34, 34, 34);
+}
+
+.footer {
+  width: 85%;
+  height: 60px;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.footer__nav-list {
+  position: relative;
+}
+
+.footer__nav-list li {
+  margin-right: 25px;
+}
+
+.footer__nav-list li+li:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  height: 14px;
+  margin-top: -7px;
+  border-right: 1px solid #fff;
+  margin-left: -12px;
+}
+
+.footer__nav-list li+.footer__nav-list li {
+  border-left: 1px solid #fff;
+}
+
+.footer__nav-list li:last-child {
+  margin-right: 0;
+}
+
+.footer__nav-list-link {
+  height: 60px;
+  display: inline-block;
+  color: #fff;
+}
+
+.footer__nav-list-link:hover {
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  /*------------------- ハンバーガーメニュー -------------------*/
+
+  a {
+    text-decoration: none;
+    color: blue
+  }
+
+  .nav {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    background: rgb(252, 250, 250);
+    transition: .7s;
+    text-align: center;
+    z-index: 5;
+    display: block;
+  }
+
+  .nav ul {
+    padding-top: 80px;
+  }
+
+  .nav ul li {
+    list-style-type: none;
+    margin-top: -10px;
+  }
+
+  .menu {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+  }
+
+  .menu__line--top,
+  .menu__line--middle,
+  .menu__line--bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  .menu__line--top {
+    top: 0;
+  }
+
+  .menu__line--middle {
+    top: 14px;
+  }
+
+  .menu__line--bottom {
+    bottom: 0;
+  }
+
+  .menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+
+  .menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+
+  .in {
+    transform: translateX(100%);
+  }
+
+  .contact {
+    margin-top: 70px;
+  }
+
+  .footer {
+    height: auto;
+    line-height: 2;
+
+  }
+
+  .copyright {
+    margin: 90px 0 0 50px;
+  }
+
+  .footer__nav-list {
+    display: block;
+    margin-right: 80px;
+    position: static;
+  }
+
+  .footer__nav-list-link {
+    height: auto;
+    text-align: center;
+  }
+
+  .footer__nav-list li+li:before {
+    display: none;
+  }
+
+  .footer__nav-list li:last-child {
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+
+  .footer__nav-list li:first-child {
+    margin-top: 20px;
+  }
+
+
+}
