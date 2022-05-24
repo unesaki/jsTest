@@ -82,13 +82,11 @@ body {
 }
 
 /*---------------- firstview ------------------*/
-.firstview {
-  position: relative;
-  margin-top: 80px;
-}
 
 .firstview__eyecatch {
   height: 600px;
+  position: relative;
+  margin-top: 80px;
 }
 
 .main-card-img {
